@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blazer CSS++</title>
+    <link rel="stylesheet" href="./blazer.css">
+    <script type="module" src="./blazer.js"></script>
+  </head>
+  <body class="bz-theme">
+    <main class="bz-shell">
+      <section class="bz-stage">
+        <div class="bz-band bz-panel bz-hero bz-reflect" data-bz-animate="rise">
+          <div>
+            <div class="bz-topbar">
+              <div class="bz-brand" aria-label="Blazer CSS++">
+                <span class="bz-brand-mark" aria-hidden="true"></span>
+                <span>Blazer CSS++</span>
+              </div>
+              <nav class="bz-nav" aria-label="Navigasi">
+                <a href="#components">Components</a>
+                <a href="#effects">Effects</a>
+                <a href="#install">Install</a>
+              </nav>
+            </div>
+
+            <span class="bz-kicker">Vanilla CSS + JavaScript</span>
+            <h1 class="bz-title bz-gradient-text">Glass UI system with serious motion.</h1>
+            <p class="bz-lead">
+              Toolkit UI tanpa dependency untuk membuat interface bergradasi, bercahaya, memantul,
+              berefek kaca, responsif, dan tetap ringan.
+            </p>
+            <div class="bz-actions">
+              <button class="bz-btn bz-btn-primary" type="button" data-bz-ripple data-bz-modal-open="bz-demo-modal">
+                Launch demo
+              </button>
+              <button class="bz-btn bz-btn-ghost" type="button" data-bz-ripple data-bz-command-open>
+                Command
+              </button>
+              <button
+                class="bz-btn bz-btn-ghost"
+                type="button"
+                data-bz-ripple
+                data-bz-toast="Glow, ripple, dan toast aktif."
+                data-bz-toast-title="Blazer CSS++ ready"
+              >
+                Toast
+              </button>
+            </div>
+          </div>
+
+          <div class="bz-metrics" aria-label="Metrik SDK">
+            <div class="bz-metric">
+              <strong>0</strong>
+              <span>Dependencies</span>
+            </div>
+            <div class="bz-metric">
+              <strong>12+</strong>
+              <span>Effects</span>
+            </div>
+            <div class="bz-metric">
+              <strong>CSS</strong>
+              <span>Token first</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="bz-stack">
+          <div class="bz-band bz-panel bz-orbital" id="effects" data-bz-animate="pop">
+            <div class="bz-orbital-core" aria-hidden="true"></div>
+          </div>
+
+          <div class="bz-band bz-panel" data-bz-animate="blaze">
+            <h2 class="bz-section-title">Effect Tokens</h2>
+            <div class="bz-chip-row">
+              <span class="bz-chip" data-tone="blue">glass blur</span>
+              <span class="bz-chip" data-tone="gold">reflection</span>
+              <span class="bz-chip" data-tone="violet">gradient glow</span>
+              <span class="bz-chip">ripple</span>
+              <span class="bz-chip">tilt</span>
+              <span class="bz-chip">modal</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="bz-grid bz-grid-2" id="components" style="margin-top: 18px;">
+        <article class="bz-card bz-reflect" data-bz-tilt="7" data-bz-animate="rise">
+          <h3>Reflective Card</h3>
+          <p>Pointer movement mengubah posisi highlight dan pantulan, membuat surface terasa hidup.</p>
+        </article>
+
+        <article class="bz-card" data-bz-tilt="7" data-bz-animate="rise" data-bz-delay="80">
+          <h3>Gradient Control</h3>
+          <p>Komponen tombol, chip, progress, dan form memakai token yang konsisten.</p>
+          <div class="bz-progress" aria-label="Progress demo" style="margin-top: 14px;">
+            <span style="--value: 72%;"></span>
+          </div>
+        </article>
+
+        <article class="bz-card" data-bz-animate="rise" data-bz-delay="160">
+          <div class="bz-tabs" data-bz-tabs>
+            <div class="bz-tablist" role="tablist" aria-label="Demo tab">
+              <button class="bz-tab" role="tab" aria-selected="true" aria-controls="tab-glass" id="tab-glass-button">Glass</button>
+              <button class="bz-tab" role="tab" aria-selected="false" aria-controls="tab-glow" id="tab-glow-button">Glow</button>
+              <button class="bz-tab" role="tab" aria-selected="false" aria-controls="tab-flow" id="tab-flow-button">Flow</button>
+            </div>
+            <div class="bz-tab-panel" role="tabpanel" id="tab-glass" aria-labelledby="tab-glass-button" data-active="true">
+              <p>Layer transparan, blur, dan border tipis untuk kedalaman visual.</p>
+            </div>
+            <div class="bz-tab-panel" role="tabpanel" id="tab-glow" aria-labelledby="tab-glow-button">
+              <p>Glow dipakai sebagai aksen, bukan memenuhi seluruh layar.</p>
+            </div>
+            <div class="bz-tab-panel" role="tabpanel" id="tab-flow" aria-labelledby="tab-flow-button">
+              <p>Interaksi kecil seperti ripple dan toast membuat UI terasa responsif.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="bz-card" id="install" data-bz-animate="rise" data-bz-delay="240">
+          <h3>Install Pattern</h3>
+          <form class="bz-form">
+            <input class="bz-input" value='<link rel="stylesheet" href="./blazer.css">' aria-label="CSS include">
+            <input class="bz-input" value='<script type="module" src="./blazer.js"></script>' aria-label="JS include">
+            <select class="bz-select" aria-label="Theme">
+              <option>Radiant glass</option>
+              <option>High contrast</option>
+              <option>Soft glow</option>
+            </select>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <div class="bz-modal-root" id="bz-demo-modal" data-open="false" aria-hidden="true">
+      <section class="bz-modal" role="dialog" aria-modal="true" aria-labelledby="bz-demo-modal-title">
+        <header>
+          <h2 id="bz-demo-modal-title">Blazer CSS++ Demo</h2>
+          <button class="bz-btn bz-btn-ghost" type="button" data-bz-ripple data-bz-modal-close aria-label="Tutup modal">x</button>
+        </header>
+        <p>
+          Modal ini dibuat tanpa React: CSS menangani visual system, JavaScript menangani behavior kecil
+          yang terukur.
+        </p>
+        <div class="bz-actions">
+          <button class="bz-btn bz-btn-primary" type="button" data-bz-ripple data-bz-toast="Modal action berhasil.">
+            Run action
+          </button>
+          <button class="bz-btn bz-btn-ghost" type="button" data-bz-ripple data-bz-modal-close>
+            Close
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <div class="bz-noise" aria-hidden="true"></div>
+  </body>
+</html>

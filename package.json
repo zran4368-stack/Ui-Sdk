@@ -1,0 +1,49 @@
+{
+  "name": "blazer-css-plus-plus",
+  "version": "0.1.0",
+  "description": "Blazer CSS++: vanilla CSS and JS UI animation toolkit with glass, glow, gradient, reflection, ripple, modal, toast, tabs, and command palette.",
+  "type": "module",
+  "main": "./blazer.js",
+  "module": "./blazer.js",
+  "types": "./blazer.d.ts",
+  "style": "./blazer.css",
+  "exports": {
+    ".": {
+      "types": "./blazer.d.ts",
+      "import": "./blazer.js",
+      "default": "./blazer.js"
+    },
+    "./css": "./blazer.css",
+    "./blazer.css": "./blazer.css",
+    "./blazer.js": "./blazer.js"
+  },
+  "files": [
+    "blazer.css",
+    "blazer.js",
+    "blazer.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "./blazer.css",
+    "./blazer.js"
+  ],
+  "unpkg": "./blazer.js",
+  "jsdelivr": "./blazer.js",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "check": "node --check blazer.js",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "keywords": [
+    "blazer",
+    "ui",
+    "sdk",
+    "css",
+    "javascript",
+    "animation",
+    "glassmorphism",
+    "vanilla-js"
+  ],
+  "license": "MIT"
+}
