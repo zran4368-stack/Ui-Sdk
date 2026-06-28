@@ -78,3 +78,9 @@ npm start
 ```
 
 Open `http://localhost:4173`.
+
+## Examples
+
+Open `http://localhost:4173/examples/` after running the demo server.
+
+The `examples/` folder includes 10 visual login screens. Each one uses Blazer CSS++ backgrounds, glass cards, glow, reflection, tilt, ripple, and viewport animation. The Google buttons in those examples are visual-only UI elements and do not connect to OAuth or any real authentication provider.
