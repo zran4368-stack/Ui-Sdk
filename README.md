@@ -1,11 +1,11 @@
 # Blazer CSS++
 
-Blazer CSS++ adalah paket npm vanilla CSS + JavaScript untuk membuat UI dengan animasi, gradient, glow, efek kaca, pantulan, ripple, modal, toast, tabs, tilt, dan command palette tanpa framework.
+Blazer CSS++ is a vanilla CSS + JavaScript npm package for building polished UI with animations, gradients, glow, glass surfaces, reflections, ripple effects, modals, toasts, tabs, tilt interactions, and a command palette without a framework.
 
-Nama produk: **Blazer CSS++**  
-Nama package npm: `blazer-css-plus-plus`
+Product name: **Blazer CSS++**  
+npm package name: `blazer-css-plus-plus`
 
-`++` tidak dipakai di nama package agar aman untuk registry npm dan import path.
+The package name uses `plus-plus` instead of `++` so it stays safe for npm registry names and import paths.
 
 ## Install
 
@@ -19,10 +19,10 @@ import { initBlazer, animate, showToast } from "blazer-css-plus-plus";
 
 initBlazer();
 animate(".hero-card", "rise", { stagger: 80 });
-showToast({ title: "Blazer", message: "UI aktif." });
+showToast({ title: "Blazer", message: "UI is ready." });
 ```
 
-## HTML Cepat
+## Quick HTML
 
 ```html
 <link rel="stylesheet" href="./blazer.css">
@@ -37,30 +37,30 @@ showToast({ title: "Blazer", message: "UI aktif." });
 
   <article class="bz-card bz-reflect" data-bz-tilt="8" data-bz-animate="rise">
     <h3>Glass card</h3>
-    <p>Gradient, glow, reflection, dan motion aktif.</p>
+    <p>Gradient, glow, reflection, and motion are active.</p>
   </article>
 </body>
 ```
 
 ## API
 
-- `initBlazer(root)`: scan atribut `data-bz-*` dan aktifkan behavior.
-- `animate(targets, preset, options)`: jalankan preset animasi.
-- `showToast({ title, message, timeout })`: tampilkan toast.
-- `openModal(element)` / `closeModal(element)`: kontrol dialog.
-- `openCommand()` / `closeCommand()`: kontrol command palette.
+- `initBlazer(root)`: scans `data-bz-*` attributes and activates UI behavior.
+- `animate(targets, preset, options)`: runs an animation preset.
+- `showToast({ title, message, timeout })`: displays a toast.
+- `openModal(element)` / `closeModal(element)`: controls dialogs.
+- `openCommand()` / `closeCommand()`: controls the command palette.
 
-Preset animasi: `rise`, `pop`, `blaze`, `float`, `pulse`.
+Animation presets: `rise`, `pop`, `blaze`, `float`, `pulse`.
 
-## Atribut
+## Attributes
 
-- `data-bz-ripple`: efek ripple pada klik.
-- `data-bz-tilt="8"`: tilt 3D mengikuti pointer.
-- `data-bz-animate="rise"`: animasi saat elemen masuk viewport.
-- `data-bz-modal-open="modal-id"` dan `data-bz-modal-close`: kontrol modal.
-- `data-bz-toast="Pesan"` dan `data-bz-toast-title="Judul"`: toast.
-- `data-bz-tabs`: aktifkan tab dengan role ARIA.
-- `data-bz-command-open`: buka command palette.
+- `data-bz-ripple`: adds a click ripple effect.
+- `data-bz-tilt="8"`: adds 3D pointer tilt.
+- `data-bz-animate="rise"`: animates an element when it enters the viewport.
+- `data-bz-modal-open="modal-id"` and `data-bz-modal-close`: controls modals.
+- `data-bz-toast="Message"` and `data-bz-toast-title="Title"`: displays a toast.
+- `data-bz-tabs`: activates ARIA-based tabs.
+- `data-bz-command-open`: opens the command palette.
 
 ## Publish
 
@@ -77,4 +77,4 @@ npm publish --access public
 npm start
 ```
 
-Buka `http://localhost:4173`.
+Open `http://localhost:4173`.
